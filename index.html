@@ -2,262 +2,264 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Karna | Civil Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Karna | Civil Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            background: linear-gradient(to right, #f0f4ff, #dbeafe);
-            overflow-x: hidden;
-            color: #1e293b;
-        }
+    body {
+      background: linear-gradient(to right, #f0f4ff, #dbeafe);
+      overflow-x: hidden;
+      color: #1e293b;
+    }
 
-        header {
-            background: linear-gradient(to right, #1e3a8a, #1e40af);
-            color: #fff;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    header {
+      background: linear-gradient(to right, #1e3a8a, #1e40af);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        header h1 {
-            font-size: 2rem;
-        }
+    header h1 {
+      font-size: 1.8rem;
+    }
 
-        nav a {
-            margin-left: 20px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-        nav a:hover {
-            color: #60a5fa;
-        }
+    nav a {
+      margin-left: 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
 
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            padding: 60px 40px;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1581092334394-eed18097c0b3?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
-            color: #fff;
-            min-height: 90vh;
-        }
+    nav a:hover {
+      color: #60a5fa;
+    }
 
-        .hero-text {
-            max-width: 600px;
-        }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1581092334394-eed18097c0b3?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: #fff;
+      min-height: 90vh;
+    }
 
-        .hero-text h2 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            animation: fadeInLeft 1.5s;
-        }
+    .hero-text {
+      max-width: 600px;
+      flex: 1 1 100%;
+    }
 
-        .hero-text p {
-            font-size: 1.2rem;
-            animation: fadeInLeft 2s;
-        }
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-        .hero img {
-            width: 380px;
-            border-radius: 10px;
-            animation: fadeInRight 2s;
-            margin-top: 20px;
-        }
+    .hero-text p {
+      font-size: 1.1rem;
+    }
 
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+    .hero img {
+      max-width: 100%;
+      width: 380px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
 
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+    section {
+      padding: 60px 20px;
+    }
 
-        section {
-            padding: 60px 40px;
-        }
+    .section-title {
+      font-size: 2rem;
+      color: #1e3a8a;
+      margin-bottom: 30px;
+      text-align: center;
+    }
 
-        .section-title {
-            font-size: 2.5rem;
-            color: #1e3a8a;
-            margin-bottom: 30px;
-            text-align: center;
-        }
+    .about, .projects, .skills, .contact {
+      background: #f1f5f9;
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
 
-        .about, .projects, .skills, .contact {
-            background: #f1f5f9;
-            border-radius: 12px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-        }
+    .projects-grid, .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
 
-        .about p {
-            font-size: 1.1rem;
-        }
+    .project-card, .skill-card {
+      background: linear-gradient(to top left, #ffffff, #f8fafc);
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-        .projects-grid, .skills-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+    .project-card:hover, .skill-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        .project-card, .skill-card {
-            background: linear-gradient(to top left, #ffffff, #f8fafc);
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
 
-        .project-card:hover, .skill-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
 
-        .project-card img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            height: 180px;
-            object-fit: cover;
-        }
+    .contact input, .contact textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
 
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
+    .contact button {
+      padding: 12px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
 
-        .contact input, .contact textarea {
-            margin-bottom: 15px;
-            padding: 12px;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-        }
+    .contact button:hover {
+      background: #2563eb;
+    }
 
-        .contact button {
-            padding: 12px;
-            background: #1e3a8a;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-        .contact button:hover {
-            background: #2563eb;
-        }
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
 
-        footer {
-            background: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+      .hero-text h2 {
+        font-size: 2rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 10px 10px 0 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Er. Ayush Karna</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Er. Ayush Karna</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="hero">
-        <div class="hero-text">
-            <h2>Designing Tomorrow’s Infrastructure</h2>
-            <p>Civil Engineer passionate about sustainable design, construction technology, and urban development.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Engineer">
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Designing Tomorrow’s Infrastructure</h2>
+      <p>Civil Engineer passionate about sustainable design, construction technology, and urban development.</p>
     </div>
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Engineer">
+  </div>
 
-    <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>Hello! I'm Ayush Karna, a civil engineer specializing in structural design and infrastructure projects. With a strong background in AutoCAD, STAAD Pro, and project management, I aim to contribute to efficient and sustainable development.</p>
-    </section>
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I'm Ayush Karna, a civil engineer specializing in structural design and infrastructure projects. With a strong background in AutoCAD, STAAD Pro, and project management, I aim to contribute to efficient and sustainable development.</p>
+  </section>
 
-    <section class="projects" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Project 1">
-                <h3>Bridge Construction</h3>
-                <p>Designed and managed the construction of a steel bridge connecting two major urban centers.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1605711285794-310fc4383c71?auto=format&fit=crop&w=800&q=80" alt="Project 2">
-                <h3>Residential Tower</h3>
-                <p>Worked on the structural analysis and design of a 20-story residential building with modern safety codes and energy efficiency.</p>
-            </div>
-        </div>
-    </section>
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Project 1">
+        <h3>Bridge Construction</h3>
+        <p>Designed and managed the construction of a steel bridge connecting two major urban centers.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1605711285794-310fc4383c71?auto=format&fit=crop&w=800&q=80" alt="Project 2">
+        <h3>Residential Tower</h3>
+        <p>Worked on the structural analysis and design of a 20-story residential building with modern safety codes and energy efficiency.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="skills" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-list">
-            <div class="skill-card">AutoCAD</div>
-            <div class="skill-card">STAAD Pro</div>
-            <div class="skill-card">ETABS</div>
-            <div class="skill-card">Revit</div>
-            <div class="skill-card">Microsoft Project</div>
-            <div class="skill-card">Construction Management</div>
-            <div class="skill-card">Surveying & GIS</div>
-            <div class="skill-card">Site Supervision</div>
-        </div>
-    </section>
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill-card">AutoCAD</div>
+      <div class="skill-card">STAAD Pro</div>
+      <div class="skill-card">ETABS</div>
+      <div class="skill-card">Revit</div>
+      <div class="skill-card">Microsoft Project</div>
+      <div class="skill-card">Construction Management</div>
+      <div class="skill-card">Surveying & GIS</div>
+      <div class="skill-card">Site Supervision</div>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        &copy; 2025 Er. Ayush Karna | All rights reserved.
-    </footer>
+  <footer>
+    &copy; 2025 Er. Ayush Karna | All rights reserved.
+  </footer>
 </body>
 
 </html>
