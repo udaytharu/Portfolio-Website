@@ -239,6 +239,29 @@
       .hero-text p {
         font-size: 1rem;
       }
+      .teammates-list {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.day-heading {
+  margin-top: 10px;
+}
+
+.pdf-link {
+  display: inline-block;
+  margin: 8px 0;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.pdf-download,
+.excel-download {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
     }
   </style>
 </head>
@@ -280,7 +303,7 @@
       <div class="project-card">
         <h3>Survey Camp</h3>
         <p>Field-based practical project involving real-world surveying techniques and data collection. This ongoing work is a collaborative effort with my dedicated teammates:</p>
-        <ul style="margin-left: 20px; margin-top: 10px;">
+        <ul class="teammates-list">
           <li>Ayush Karna</li>
           <li>Aman Tharu</li>
           <li>Dikshya Thapa</li>
@@ -288,10 +311,13 @@
           <li>Sandip Acharya</li>
           <li>Sameer Sigdel</li>
         </ul>
-        <p style="margin-top: 10px;"><strong>Day 1:</strong></p>
-        <a href="survey-day1.pdf" target="_blank" style="display:inline-block;margin:8px 0;color:var(--accent-color);font-weight:600;text-decoration:underline;">📄 View PDF</a><br>
-        <a href="survey-day1.pdf" download style="display:inline-block;margin-bottom:8px;">⬇️ Download PDF</a><br>
-        <a href="survey-day1.xlsx" download style="display:inline-block;">⬇️ Download Excel</a>
+        
+        <p class="day-heading"><strong>Day 1:</strong></p>
+        
+        <a href="survey-day1.pdf" target="_blank" class="pdf-link">📄 View PDF</a><br>
+        <a href="survey-day1.pdf" download class="pdf-download">⬇️ Download PDF</a><br>
+        <a href="survey-day1.xlsx" download class="excel-download">⬇️ Download Excel</a>
+        
       </div>
     </div>
   </section>
