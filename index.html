@@ -263,6 +263,17 @@
 }
 
     }
+    .days-container {
+  display: flex;
+  gap: 40px; /* space between Day 1 and Day 2 blocks */
+  flex-wrap: wrap; /* ensures responsiveness */
+}
+
+.day-block {
+  flex: 1 1 200px; /* grow/shrink with min width */
+  max-width: 300px;
+}
+
   </style>
 </head>
 
@@ -312,11 +323,21 @@
           <li>Sameer Sigdel</li>
         </ul>
         
-        <p class="day-heading"><strong>Day 1:</strong></p>
+        <div class="days-container">
+          <div class="day-block">
+            <p class="day-heading"><strong>Day 1:</strong></p>
+            <a href="survey-day1.pdf" target="_blank" class="pdf-link">📄 View PDF</a><br>
+            <a href="survey-day1.pdf" download class="pdf-download">⬇️ Download PDF</a><br>
+            <a href="survey-day1.xlsx" download class="excel-download">⬇️ Download Excel</a>
+          </div>
         
-        <a href="survey-day1.pdf" target="_blank" class="pdf-link">📄 View PDF</a><br>
-        <a href="survey-day1.pdf" download class="pdf-download">⬇️ Download PDF</a><br>
-        <a href="survey-day1.xlsx" download class="excel-download">⬇️ Download Excel</a>
+          <div class="day-block">
+            <p class="day-heading"><strong>Day 2:</strong></p>
+            <a href="survey-day2.pdf" target="_blank" class="pdf-link">📄 View PDF</a><br>
+            <a href="survey-day2.pdf" download class="pdf-download">⬇️ Download PDF</a><br>
+            <a href="survey-day2.xlsx" download class="excel-download">⬇️ Download Excel</a>
+          </div>
+        </div>
         
       </div>
     </div>
